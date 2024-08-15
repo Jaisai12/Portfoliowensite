@@ -391,7 +391,7 @@ body {
 @media (max-width: 768px) {
   /* General Styles */
   body {
-    margin-inline: 10px;
+    margin-inline: 20px;
     height: 300vh;
   }
   .menu-toggle {
