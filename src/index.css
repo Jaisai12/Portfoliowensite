@@ -1,60 +1,70 @@
-body {
-  margin-inline: 10px;
-  height: 300vh;
-}
-
 .Mainheader {
   display: flex;
   justify-content: space-around;
-  text-align: center;
   align-items: center;
+  padding: 10px;
   background: linear-gradient(to right, #09203f, #537895);
   color: transparent;
   -webkit-background-clip: text;
+  z-index: 1000;
 }
 
-.nav-list {
-  display: none; /* Hide by default */
-}
-.nav-list.open {
-  display: flex; /* Show when menu is open */
-  flex-direction: column; /* Stack items vertically on mobile */
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-}
-.nav-list.open {
-  display: block;
-}
-
-.listelements {
-  display: flex;
-  list-style: none;
-}
-
-.listelements li a {
-  text-decoration: none;
+.Headername {
   background: linear-gradient(to right, #09203f, #537895);
-  color: transparent;
   -webkit-background-clip: text;
-  position: relative;
-}
-.listelements li {
-  margin-inline: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  cursor: pointer;
-  position: relative;
+  color: transparent;
 }
 
 .listelements li a:hover {
   color: #09203f;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navigation styles */
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list.open {
+  flex-direction: column;
+}
+
+.listelements li {
+  position: relative;
+}
+
+.instaimg {
+  transition: transform 0.6s; /* Smooth transition for the flip */
+  transform-style: preserve-3d; /* Ensure the element is flipped in 3D space */
+}
+
+.instaimg:hover {
+  transform: rotateY(360deg); /* Flip the image horizontally on hover */
+}
+.listelements {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: #09203f;
+  position: relative;
+}
+.listelements li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .listelements li a::after {
@@ -71,15 +81,12 @@ body {
 .listelements li a:hover::after {
   width: 100%; /* Expand the underline to full width on hover */
 }
+
+/* Social media icons */
 .instaimg {
   height: 25px;
-  color: #09203f;
+  cursor: pointer;
 }
-
-.instaimg:hover {
-  transform: translateY(-5px);
-}
-
 .Maincontainer {
   /* background-color: #09203f; */
   height: 450px;
@@ -419,10 +426,11 @@ body {
   }
 
   .listelements {
-    display: flex;
+    display: none;
     flex-direction: column; /* Stack list items vertically */
     list-style: none;
     padding: 0;
+    position: relative;
   }
 
   .listelements li {
@@ -511,6 +519,18 @@ body {
     padding: 10px;
   }
 
+  .instaimg {
+    transition: transform 0.6s; /* Smooth transition for the flip */
+    transform-style: preserve-3d; /* Ensure the element is flipped in 3D space */
+  }
+
+  .instaimg:hover {
+    transform: rotateY(360deg); /* Flip the image horizontally on hover */
+  }
+  .listelements li a:hover {
+    color: #09203f;
+  }
+
   .Headername {
     color: #09203f; /* Change color to ensure it's visible */
     font-size: 24px; /* Ensure text size is appropriate */
@@ -522,11 +542,35 @@ body {
   .listelements {
     flex-wrap: nowrap;
     gap: 15px;
+    position: relative;
   }
 
   .listelements li {
     font-size: 16px;
     margin-inline: 15px;
+    position: relative;
+  }
+
+  .listelements li a {
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .listelements li a::after {
+    content: "";
+    position: absolute;
+    background-color: #09203f; /* Color of the underline */
+    height: 3px; /* Thickness of the underline */
+    width: 0; /* Start with zero width */
+    left: 0;
+    bottom: -3px; /* Position the underline below the text */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+  }
+
+  .listelements li a:hover::after {
+    width: 100%; /* Expand the underline to full width on hover */
   }
 
   .Maincontainer {

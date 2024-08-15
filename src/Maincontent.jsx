@@ -48,6 +48,7 @@ function Maincontent() {
         <img
           src="https://img.freepik.com/premium-vector/flat-design-illustration-people-work-from-home_19830-90.jpg?w=740"
           alt="work"
+          height="450px"
         />
       </div>
     </main>
