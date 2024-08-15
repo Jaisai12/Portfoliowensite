@@ -65,6 +65,7 @@
   position: relative;
   font-size: 18px;
   font-weight: 600;
+  color: #09203f;
 }
 
 .listelements li a::after {
