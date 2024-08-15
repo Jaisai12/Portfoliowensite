@@ -13,6 +13,14 @@ body {
   -webkit-background-clip: text;
 }
 
+.nav-list {
+  display: none; /* Hide by default */
+}
+.nav-list.open {
+  display: flex; /* Show when menu is open */
+  flex-direction: column; /* Stack items vertically on mobile */
+}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -394,17 +402,16 @@ body {
     margin-inline: 20px;
     height: 300vh;
   }
+
   .menu-toggle {
-    display: block;
+    display: block; /* Show on mobile */
+    cursor: pointer;
+    margin: 10px; /* Adjust spacing as needed */
   }
-  .nav-list.open {
-    display: flex;
-  }
+
   .Mainheader {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
     background: linear-gradient(to right, #09203f, #537895);
     color: transparent;
@@ -413,12 +420,13 @@ body {
 
   .listelements {
     display: flex;
+    flex-direction: column; /* Stack list items vertically */
     list-style: none;
-    flex-wrap: wrap;
+    padding: 0;
   }
 
   .listelements li {
-    margin-inline: 10px;
+    margin: 10px 0; /* Vertical spacing between items */
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
@@ -442,8 +450,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px; /* Adjust padding */
+    margin-top: 10px; /* Adjust margin */
   }
 
   .Maincontainertxt {
@@ -452,133 +460,46 @@ body {
   }
 
   .Introtxt {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
   }
 
   .skillbox {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
   }
 
-  .skillh2 {
-    font-size: 20px;
-  }
-
   .imgesskill p {
-    font-size: 16px;
-  }
-
-  .edumain {
-    padding: 20px;
-    text-align: center;
+    font-size: 14px;
   }
 
   .edufirst {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0;
     gap: 15px;
-  }
-
-  .resumedownload {
-    font-size: 18px;
   }
 
   .MyProjects {
     flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
 
-  .project1,
-  .project2,
-  .project3 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .gittxt {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .gittxt button {
-    padding: 8px;
-  }
-
-  /* Contact Section */
-  .contact-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 100%;
-  }
-
   .contact-heading {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .contact-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .contact-details p {
-    font-size: 16px;
-  }
-
-  .footertxt {
-    font-size: 16px;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .Mainheader {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .listelements {
-      flex-direction: column;
-      gap: 10px;
-      text-align: center;
-    }
-
-    .Maincontainer {
-      padding: 10px;
-      margin-top: 10px;
-    }
-
-    .Introtxt {
-      font-size: 20px;
-    }
-
-    .skillbox {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .imgesskill p {
-      font-size: 14px;
-    }
-
-    .edufirst {
-      left: 0;
-    }
-
-    .MyProjects {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .contact-heading {
-      font-size: 24px;
-    }
-
-    .contact-text {
-      font-size: 14px;
-    }
-
-    .gittxt {
-      font-size: 14px;
-    }
+  .gittxt {
+    font-size: 14px;
+    margin-top: 50px;
   }
 }
 
