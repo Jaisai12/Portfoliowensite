@@ -416,7 +416,11 @@
     cursor: pointer;
     margin: 10px; /* Adjust spacing as needed */
   }
-
+  .Headername {
+    font-size: 24px;
+    text-align: center;
+    margin-inline: auto;
+  }
   .Mainheader {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -468,12 +472,32 @@
     text-align: center;
   }
 
+  .resumedownload {
+    position: relative;
+    left: -20px;
+  }
+
   .Introtxt {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
+    position: relative;
+    left: -20px;
   }
 
+  .proj {
+    width: 250px;
+    text-align: justify;
+    margin-bottom: 10px;
+    position: relative;
+    left: 20px;
+  }
+
+  .mainimgwork {
+    align-items: center;
+    position: relative;
+    left: 10px;
+  }
   .skillbox {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
@@ -509,6 +533,8 @@
   .gittxt {
     font-size: 14px;
     margin-top: 50px;
+    position: relative;
+    left: 25px;
   }
 }
 

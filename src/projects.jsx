@@ -26,7 +26,7 @@ function Projects() {
     <div className="Mainprojects">
       <h2 className="Projectsh2">Projects</h2>
       <div className="MyProjects">
-        <div className="project1">
+        <div className="project1 proj">
           <h2 className="hproj">Slot Machine game</h2>
           <p className="projdescript">
             Description: I developed a slot machine game that generates random
@@ -34,14 +34,14 @@ function Projects() {
             python basic syntax
           </p>
         </div>
-        <div className="project2">
+        <div className="project2 proj">
           <h2 className="hproj">Rock Paper Scissors</h2>
-          <p className="projdescript">
+          <p className="projdescript ">
             Description: I developed a Rock Paper Scissors game using html ,css
             and javascript .
           </p>
         </div>
-        <div className="project3">
+        <div className="project3 proj">
           <h2 className="hproj">Cool Mania</h2>
           <p className="projdescript">
             Description: I developed website using wordress and its name ic
