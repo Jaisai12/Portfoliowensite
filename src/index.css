@@ -279,9 +279,9 @@
 }
 .Mainprojects {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   overflow-x: hidden;
-  overflow-y: hidden;
+  height: 450px;
 }
 
 .projdescript {
