@@ -477,7 +477,7 @@
 
   .resumedownload {
     position: relative;
-    left: -30px;
+    left: -50px;
   }
 
   .Introtxt {
@@ -485,7 +485,7 @@
     font-weight: bold;
     line-height: 1.5;
     position: relative;
-    left: -30px;
+    left: -50px;
   }
 
   .proj {
@@ -493,7 +493,7 @@
     text-align: justify;
     margin-bottom: 10px;
     position: relative;
-    left: 20px;
+    left: 10px;
   }
 
   .mainimgwork {
