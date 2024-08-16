@@ -409,6 +409,7 @@
   body {
     margin-inline: 20px;
     height: 300vh;
+    overflow-x: hidden;
   }
 
   .menu-toggle {
