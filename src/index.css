@@ -429,6 +429,7 @@
     background: linear-gradient(to right, #09203f, #537895);
     color: transparent;
     -webkit-background-clip: text;
+    overflow-x: hidden;
   }
 
   .listelements {
@@ -466,6 +467,7 @@
     align-items: center;
     padding: 10px; /* Adjust padding */
     margin-top: 10px; /* Adjust margin */
+    overflow-x: hidden;
   }
 
   .Maincontainertxt {
@@ -502,6 +504,7 @@
   .skillbox {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
+    overflow-x: hidden;
   }
 
   .imgesskill p {
@@ -521,6 +524,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    overflow-x: hidden;
   }
 
   .contact-heading {
