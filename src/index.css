@@ -280,6 +280,8 @@
 .Mainprojects {
   text-align: center;
   margin-bottom: 200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .projdescript {
@@ -403,7 +405,13 @@
   font-weight: 600;
   color: #09203f;
 }
+.contact-section {
+  overflow-x: hidden;
+}
 
+.Myfooter {
+  overflow-x: hidden;
+}
 @media (max-width: 768px) {
   /* General Styles */
   body {
@@ -519,7 +527,9 @@
     left: 0;
     gap: 15px;
   }
-
+  .contact-section {
+    overflow-x: hidden;
+  }
   .MyProjects {
     flex-direction: column;
     gap: 10px;
