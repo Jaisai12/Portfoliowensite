@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Jaisaikumarresume from "./assets/Jaisaikumar.pdf";
 
 function Maincontent() {
   useEffect(() => {
@@ -34,10 +35,7 @@ function Maincontent() {
         <p className="resumedownload">
           Click here to Download CV{" "}
           <button>
-            <a
-              href="/assets/Jaisaikumar_Resume(2).pdf"
-              download="Jaisaikumar_Resume(2).pdf"
-            >
+            <a href={Jaisaikumarresume} download="Jaisaikumarresume">
               Resume
             </a>
           </button>
